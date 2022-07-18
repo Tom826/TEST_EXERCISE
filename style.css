@@ -292,7 +292,7 @@ option {
 .phone_select_wrapper::before {
     content: "Контактный телефон";
     position: absolute;
-    width: 168px;
+    width: 170px;
     height: 21px;
     font-size: 17px;
     line-height: 21px;
