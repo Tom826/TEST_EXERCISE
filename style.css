@@ -54,6 +54,7 @@ body {
 
 .main_container {
     display: flex;
+    flex-wrap: wrap;
     min-width: 1743px;
     box-sizing: border-box;
     margin: 0px 77px;
@@ -73,7 +74,7 @@ body {
 }
 
 .order_total {
-    width: 553px;
+    width: 550px;
     box-sizing: border-box;
     padding-left: 50px;
 }
@@ -93,6 +94,7 @@ body {
 
 .delivery_block_header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -147,6 +149,7 @@ body {
 
 .delivery_date_information {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 14px;
 }
@@ -178,6 +181,7 @@ body {
 
 .checkboxes_block {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 30px;
 }
