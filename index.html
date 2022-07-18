@@ -56,14 +56,16 @@
                             </div>
                             <a class="date_choosing link" href="#">Другие дата и время</a>
                         </div>
-                        <div class="checkboxes_block">    
+                        <div class="checkboxes_block">   
                             <label class="checkbox_label">
-                                <input type="checkbox" value="need_notification" name="notificatiom" checked> 
-                                Viber/СМС уведомления о статусе заказа
+                                <input class="visually_hidden control_input" type="checkbox" value="need_notification" name="notificatiom" checked> 
+                                <span class="control_mark" tabindex="0"></span>
+                                <span>Viber/СМС уведомления о статусе заказа</span>
                             </label>
                             <label class="checkbox_label">
-                                <input type="checkbox" value="need_contactless" name="contactless_delivery" disabled checked> 
-                                Оставить у двери (бесконтактная доставка)
+                                <input class="visually_hidden control_input" type="checkbox" value="need_contactless" name="contactless_delivery" disabled checked>  
+                                <span class="control_mark disabled" tabindex="0"></span>
+                                <span>Оставить у двери (бесконтактная доставка)</span>
                             </label>
                         </div>
                     </section>
