@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "PT Root UI";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../TEST_EXERCISE/fonts/PT-Root-UI_Regular.woff) format("woff");
+    src: url(../TEST_EXERCISE/fonts/PT-Root-UI_Regular.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Root UI";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../TEST_EXERCISE/fonts/PT-Root-UI_Bold.woff) format("woff");
+    src: url(../TEST_EXERCISE/fonts/PT-Root-UI_Bold.woff2) format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+  }
+  
+body {
+    min-height:  100%;
+    font-family: "PT Root UI", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.13px;
+    color: #333333;
+    height: 100%;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #065CC2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height:  100%;
+    width: 1905px;
+    background-color: #F2F2F2;
+}
+
+.main_wrapper {
+    flex-grow: 1;
+}
+
+.main_container {
+    display: flex;
+    min-width: 1743px;
+    box-sizing: border-box;
+    margin: 0px 77px;
+    padding: 40px 85px 50px 43px;
+    background-color: #FFFFFF;
+}
+
+.order_content {
+    width: 1070px;
+    border-right: 1px solid #8C8C8C;
+    padding-right: 82px;
+    box-sizing: border-box;
+}
+
+.order_total {
+    width: 553px;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+
+.delivery_block_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous,
+.next {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.disabled {
+    opacity: 0.25;
+}
+
+.delivery_type_block {
+    display: flex;
+}
+
+.delivery_type {
+    width: 490px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    display: grid;
+    grid-template-areas: 
+    "title ."
+    "address cost"
+    "address .";
+}
+
+.delivery_type:not(:last-child) {
+    margin-right: 14px;
+}
+
+.address {
+    grid-area: address;
+}
+
+.cost {
+    grid-area: cost;
+}
+
+.adress_adding {
+    display: block;
+    margin: 14px 0 30px;
+}
+
+.delivery_date_information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.delivery_date {
+    min-width: 260px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 20px;  
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+}
+
+.delivery_date > span:first-child {
+    font-weight: 700;
+}
+
+.delivery_date:not(:last-child) {
+    margin-right: 14px;
+}
+
+.choosen_type {
+    border: 2px solid #065CC2;
+}
+
+.date_choosing {
+    padding: 15px;
+}
+
+.checkboxes_block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.checkbox_label:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+option {
+    padding: 0;
+}
+
+.recipient_block {
+    display: grid;
+    grid-template-areas: 
+    "block_title block_title"
+    "name  phone"
+    "change_name change_phone";
+    gap: 14px;
+}
+
+.recipient_block > .middle_title {
+    grid-area: block_title;
+}
+
+.name_choosing {
+    grid-area: name;
+}
+
+.phone_choosing {
+    grid-area: phone;
+}
+
+.name {
+    grid-area: change_name;
+}
+
+.phone_number {
+    grid-area: change_phone;
+}
+
+.name_choosing,
+.phone_choosing {
+    
+    min-width: 280px;
+    box-sizing: border-box;
+    padding: 34px 58px 12px 14px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+}
+
+.name_select_wrapper,
+.phone_select_wrapper {
+    position: relative;
+}
+
+.name_select_wrapper::before {
+    content: "Имя и фамилия";
+    position: absolute;
+    width: 124px;
+    height: 21px;
+    font-size: 17px;
+    line-height: 21px;
+    top: 8px;
+    left: 16px;
+}
+
+.phone_select_wrapper::before {
+    content: "Контактный телефон";
+    position: absolute;
+    width: 168px;
+    height: 21px;
+    font-size: 17px;
+    line-height: 21px;
+    top: 8px;
+    left: 16px;
+}
+
+.order_weight {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 29px;
+}
+
+.table_styles {
+    width: 490px;
+    border-bottom: 1px solid #D6D6D6;
+    border-spacing: 14px;
+}
+
+.table_price {
+    text-align: right;
+    font-weight: 700;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F8F8;
+    height: 120px;
+    padding: 20px 184px 20px 120px;
+}
+
+.button {
+    width: 400px;
+    height: 80px;
+    padding: 22px 55px;
+    background: linear-gradient(0deg, #EC0002, #EC0002), linear-gradient(91.91deg, rgba(208, 38, 38, 0) 0%, #D02626 99.65%), #FF0000;
+    border: 1px solid #E01D1D;
+    box-shadow: 0px 3px 8px rgb(0 0 0 / 12%), 0px 3px 1px rgb(0 0 0 / 4%), 0px 2px 0px rgb(149 135 128 / 40%);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+}
+
+.total_footer {
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total_price {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+}
+
+/*TITLES*/
+.page_title {
+    margin: 48px 120px 19px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.middle_title {
+    margin: 0;
+    margin-bottom: 14px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 37px;
+}
+
+.small_title {
+    margin: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: inherit;
+    line-height: inherit;
+
+    grid-area: title;
+}
+
+.table_title {
+    display: flex;
+    align-items: center;
+}
