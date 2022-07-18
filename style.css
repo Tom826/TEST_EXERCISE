@@ -59,6 +59,10 @@ body {
     margin: 0px 77px;
     padding: 40px 85px 50px 43px;
     background-color: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: none;
 }
 
 .order_content {
@@ -74,6 +78,19 @@ body {
     padding-left: 50px;
 }
 
+.visually_hidden {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .delivery_block_header {
     display: flex;
     justify-content: space-between;
@@ -86,6 +103,7 @@ body {
     border: 1px solid #D6D6D6;
     border-radius: 4px;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .disabled {
@@ -164,15 +182,46 @@ body {
     margin-bottom: 30px;
 }
 
+.checkbox_label {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+}
+
 .checkbox_label:not(:last-child) {
     margin-bottom: 14px;
 }
 
-input[type="checkbox"] {
+.control_input[type="checkbox"]:checked + .control_mark::before {
+    content: "";
+    background-color: transparent;
+    background-image: url("./images/checked.svg");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 2px;
+    left: 2px;
+}
+
+.control_mark {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: #065CC2;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+}
+
+
+/*input[type="checkbox"] {
     width: 24px;
     height: 24px;
     vertical-align: middle;
-}
+}*/
 
 option {
     padding: 0;
@@ -269,8 +318,8 @@ option {
     justify-content: space-between;
     align-items: center;
     background-color: #F8F8F8;
-    height: 120px;
     padding: 20px 184px 20px 120px;
+    border-top: 1px solid #D6D6D6;
 }
 
 .button {
@@ -331,4 +380,48 @@ option {
 .table_title {
     display: flex;
     align-items: center;
+}
+
+/*STATES*/
+
+.delivery_type:hover,
+.delivery_date:hover {
+    box-shadow: 0px 3px 8px rgb(0 0 0 / 12%), 0px 3px 1px rgb(0 0 0 / 4%), 0px 2px 0px rgb(149 135 128 / 40%);
+}
+
+.delivery_type:active,
+.delivery_date:active {
+    opacity: 0.25;
+}
+
+
+.previous:hover,
+.next:hover {
+    border: 1px solid #065CC2;
+}
+
+.previous:active,
+.next:active {
+    opacity: 0.15;
+}
+
+.name_choosing:hover,
+.phone_choosing:hover {
+    border: 1px solid #065CC2;
+}
+
+.link:hover {
+    color: #5fa3f5;
+}
+
+.link:active {
+    color: #0a284d;
+}
+
+.button:hover {
+    outline: 2px solid #065CC2;
+}
+
+.button:active {
+    opacity: 0.15;
 }
