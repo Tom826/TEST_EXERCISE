@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1 class="page_title">Оформление заказа</h1>
+        </header>
+        <div class="main_wrapper">
+            <main class="main_container">
+                <div class="order_content">
+                    <section class="delivery_details">
+                        <div class="delivery_block_header">
+                            <h2 class="middle_title">Доставка</h2>
+                            <div class="switche_buttons">
+                                <button class="previous disabled" type="button" disabled>
+                                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m5.05 11 8.25 8.25-2.36 2.36L.34 11 10.93.4l2.36 2.35L5.05 11Z" fill="#333"/>
+                                    </svg>
+                                </button>
+                                <button class="next" type="button">
+                                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.58 11 .33 19.25l2.36 2.36L13.29 11 2.7.4.33 2.74 8.58 11Z" fill="#333"/>
+                                    </svg> 
+                                </button>
+                            </div>
+                        </div>
+                        <div class="delivery_type_block">
+                            <section class="delivery_type choosen_type">
+                                <h3 class="small_title">Почта России, курьер — 24-26 сент.</h4>
+                                <span class="address">ул. Академика Королева, 73/3,<br>Петропавловск- Камчатский,<br>683000</span>
+                                <span class="cost">+367 ₽</span>
+                            </section>
+                            <section class="delivery_type">
+                                <h3 class="small_title">Лабиринт, курьер — 25 сент.</h4>
+                                <span class="address">Можайское шоссе, д. 21, кв. 50,<br>Москва, 121471</span>
+                                <br>
+                                <span class="cost">0 ₽</span>
+                            </section>
+                        </div>
+                        <a class="adress_adding link" href="#">Выбрать новое место и способ</a>
+                        <div class="delivery_date_information">
+                            <div class="delivery_date choosen_type">
+                                <span>пн, 24 сен — ср, 26 сен</span>
+                                <br>
+                                <span>10:00–19:00</span>
+                            </div>
+                            <div class="delivery_date">
+                                <span>чт, 27 сен — пт, 28 сен</span>
+                                <br>
+                                <span>10:00–19:00</span>
+                            </div>
+                            <a class="date_choosing link" href="#">Другие дата и время</a>
+                        </div>
+                        <div class="checkboxes_block">    
+                            <label class="checkbox_label">
+                                <input type="checkbox" value="need_notification" name="notificatiom" checked> 
+                                Viber/СМС уведомления о статусе заказа
+                            </label>
+                            <label class="checkbox_label">
+                                <input type="checkbox" value="need_contactless" name="contactless_delivery" disabled checked> 
+                                Оставить у двери (бесконтактная доставка)
+                            </label>
+                        </div>
+                    </section>
+                    <section class="recipient_block">
+                        <h2 class="middle_title">Получатель</h2>
+                        <div class="name_select_wrapper">
+                            <select class="name_choosing">
+                                <option value="name_1">Вольфганг Вениаминович Константинопольский</option>
+                                <option value="name_2">Смирнов Иван Владирович</option>
+                            </select>
+                        </div>
+                        <a class="link name" href="#">Новый получатель</a>
+                        <div class="phone_select_wrapper">
+                            <select class="phone_choosing">
+                                <option value="phone_number_1">+7 910 234-56-78</option>
+                                <option value="phone_number_2">+7 930 674-58-22</option>
+                            </select>
+                        </div>
+                        <a class="link phone_number" href="#">Новый телефон</a>
+                    </section>
+                </div>
+                <div class="order_total">
+                    <div class="table_title">
+                        <h2 class="middle_title">В заказе 4 товара</h2>
+                        <span class="order_weight">(2 кг)</span>
+                    </div>
+                    <table class="table_styles">
+                        <tr>
+                            <td>Цена товаров</td>
+                            <td class="table_price">29 456 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Все скидки</td>
+                            <td class="table_price">–7 732 ₽</td>
+                        </tr><tr>
+                            <td>Скидка за предоплату</td>
+                            <td class="table_price">–3%</td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <button class="button" type="submit">
+                Оформить и оплатить
+            </button>
+            <div class="total_footer">
+                <span>Итого к оплате на сайте:</span>
+                <span class="total_price">21 072 ₽</span>
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>
